@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 
 
 # TODO: Add functionality where state a range in which you are comfortable purchasing
+# Add the listing title to the email sent
 # If the price drops by a certain percentage, you send email.
 
 # To be done
@@ -58,6 +59,8 @@ def send_email(current_price=0, message=""):
         return
 
     subject = 'Price within range!!'
+
+    # TODO Add the title of the listing i.e "The price of {title} is {price}....."
     body = f'Price is {current_price}. Check the Jumia link {URL}'
 
     msg = f'Subject: {subject}\n\n{body}'
