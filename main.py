@@ -4,6 +4,16 @@ import smtplib
 
 from bs4 import BeautifulSoup
 
+
+# TODO: Add functionality where state a range in which you are comfortable purchasing
+# If the price drops by a certain percentage, you send email.
+
+# To be done
+# Create a sort of a database, text based data.
+# Write to a file -> date: price e.g Date: 13/03/2021:6:53 Price: 2500
+# Check the pricing if it has reduced by the stated percentage
+
+
 URL = "https://www.jumia.co.ke/fashion-ladies-open-ankle-strapped-chunky-heel-black-35027396.html"
 
 headers = {
@@ -12,6 +22,7 @@ headers = {
 
 # check_price function checks the price of a listing
 def check_price(myPrice, margin=0):
+
     page = requests.get(URL, headers=headers)
     soup = BeautifulSoup(page.content, 'html.parser')
 
