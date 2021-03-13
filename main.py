@@ -13,6 +13,9 @@ from bs4 import BeautifulSoup
 # Write to a file -> date: price e.g Date: 13/03/2021:6:53 Price: 2500
 # Check the pricing if it has reduced by the stated percentage
 
+# Write/Read to/from a file
+# How to use git and github - add, commit, push
+
 
 URL = "https://www.jumia.co.ke/fashion-ladies-open-ankle-strapped-chunky-heel-black-35027396.html"
 
